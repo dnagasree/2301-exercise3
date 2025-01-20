@@ -11,6 +11,9 @@ jobs:
         shell: bash
         run: echo Hello Nagasree
       - uses: actions/checkout@v4
+      - name: print to log
+        id : print to log
+        uses: rajbos/actions-testing@v1
 
   secondJob:
     runs-on: ubuntu-latest
