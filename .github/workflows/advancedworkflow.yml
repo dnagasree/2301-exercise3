@@ -14,6 +14,9 @@ jobs:
       - name: print to log
         id: print_to_log  # Corrected id (removed spaces and used underscore)
         uses: rajbos/actions-testing@v1
+      -  name: time
+         run : |
+          echo "The time of the greeting was at  : ${{ steps.print_to_log.outputs.time}
 
   secondJob:
     runs-on: ubuntu-latest
