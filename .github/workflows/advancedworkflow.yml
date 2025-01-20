@@ -12,7 +12,7 @@ jobs:
         run: echo Hello Nagasree
       - uses: actions/checkout@v4
       - name: print to log
-        id : print to log
+        id: print_to_log  # Corrected id (removed spaces and used underscore)
         uses: rajbos/actions-testing@v1
 
   secondJob:
@@ -21,6 +21,3 @@ jobs:
       - name: Second job script
         shell: bash
         run: echo Hello Advaith
-
-
-   
